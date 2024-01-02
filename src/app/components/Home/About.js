@@ -2,7 +2,7 @@ import React from 'react';
 function About() {
     return (
       <div className='flex mt-10 container mx-auto pl-5'>
-          <div className='text-primary w-[50%]'>
+          <div className='text-primary lg:w-[50%]'>
             <h4 className='text-3xl font-bold my-5 text-left'>
                 Fox It | A global EdTech-based digital workforce development and skill-oriented education provider.
             </h4>

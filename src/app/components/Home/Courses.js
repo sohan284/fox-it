@@ -88,7 +88,7 @@ function Courses() {
     // }));
 
     return (
-        <div className='m-10 pb-10 container mx-auto bg-primary ' style={{ borderEndEndRadius: "120px", borderStartStartRadius: '180px' }}>
+        <div className='m-10 pb-10 container mx-auto bg-primary ' style={{ borderEndEndRadius: "120px", borderStartStartRadius: '120px' }}>
             <h1 className='font-extrabold text-4xl pt-10'>Featured Courses</h1>
             <span className='bg-secondary text-[5px] rounded-full'>______________________________________</span>
             <div className='text-primary'>
