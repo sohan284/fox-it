@@ -8,17 +8,17 @@ function Courses() {
         {
             url: 'https://i.postimg.cc/0yGwGfCF/gpd-1.jpg',
             title: 'See More',
-            width: '30%',
+            width: '32%',
         },
         {
             url: 'https://i.postimg.cc/63jg1CBf/wbd.webp',
             title: 'See More',
-            width: '30%',
+            width: '32%',
         },
         {
             url: 'https://i.postimg.cc/4yrWc51n/dte-1.jpg',
             title: 'See More',
-            width: '30%',
+            width: '32%',
         },
     ];
 
@@ -88,9 +88,9 @@ function Courses() {
     // }));
 
     return (
-        <div className='m-10 pb-10 container mx-auto bg-primary ' style={{ borderEndEndRadius: "120px", borderStartStartRadius: '120px' }}>
-            <h1 className='font-extrabold text-4xl pt-10'>Featured Courses</h1>
-            <span className='bg-secondary text-[5px] rounded-full'>______________________________________</span>
+        <div className='container mx-auto' style={{ borderEndEndRadius: "120px", borderStartStartRadius: '120px' }}>
+            <h1 className='font-extrabold text-primary text-4xl pt-10'>Featured Courses</h1>
+            <span className='bg-primary text-[5px] rounded-full'>______________________________________</span>
             <div className='text-primary'>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', minWidth: 300, width: '100%' }}>
                     {images.map((image) => (
@@ -99,26 +99,12 @@ function Courses() {
                             key={image.title}
                             style={{
                                 width: image.width,
-                                margin: "25px"
+                                marginInline: 10,
                             }}
                         >
                             <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
                             <ImageBackdrop className="MuiImageBackdrop-root" />
                             <Image>
-                                <Typography
-                                    component="span"
-                                    variant="subtitle1"
-                                    color="inherit"
-                                    sx={{
-                                        position: 'relative',
-                                        p: 4,
-                                        pt: 2,
-                                        pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-                                    }}
-                                >
-                                    {image.title}
-                                    {/* <ImageMarked className="MuiImageMarked-root" /> */}
-                                </Typography>
                             </Image>
                         </ImageButton>
                     ))}
