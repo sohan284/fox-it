@@ -21,7 +21,7 @@ function Banner() {
     ]
 
     return (
-        <Carousel className='mt-10'>
+        <Carousel className='mt-10 container mx-auto'>
             {
                 items.map((item, i) => <Paper>
                     <img className="w-full" src={item?.img} alt="FoxIt" border="0" />
