@@ -19,8 +19,8 @@ function Home() {
                     <Wave fill="url(#gradient)">
                         <defs>
                             <linearGradient id="gradient" gradientTransform="rotate(90)">
-                                <stop offset="20%" stopColor="#F0EDCC" />
-                                <stop offset="80%" stopColor="#1F1F1F" />
+                                <stop offset="1%" stopColor="#F0EDCC" />
+                                <stop offset="60%" stopColor="#001f00" />
                             </linearGradient>
                         </defs>
 

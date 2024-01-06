@@ -100,6 +100,7 @@ function Courses() {
                             style={{
                                 width: image.width,
                                 marginInline: 10,
+                                marginTop: 5,
                             }}
                         >
                             <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
