@@ -3,6 +3,7 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import { useNavigate } from 'react-router-dom';
 
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
@@ -69,7 +70,12 @@ const ImageMarked = styled('span')(({ theme }) => ({
     transition: theme.transitions.create('opacity'),
 }));
 
-export default function fxBtn({title}) {
+const FxBtn = ({ title, to }) => {
+
+    const navigate = useNavigate();
+    const handleNavigate = () =>{
+        navigate(to)
+    }
     return (
         <div className="py-10">
             <div className="w-full container bg-secondary mx-auto">
@@ -84,8 +90,8 @@ export default function fxBtn({title}) {
                         <ImageSrc />
                         <ImageBackdrop className="MuiImageBackdrop-root" />
                         <Image>
-                            <Typography
-                            className='font-bold'
+                            <Typography onClick={handleNavigate}
+                                className='font-bold'
                                 component="span"
                                 variant="subtitle1"
                                 color="inherit"
@@ -109,3 +115,4 @@ export default function fxBtn({title}) {
 
     );
 }
+export default FxBtn;

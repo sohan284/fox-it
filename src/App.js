@@ -1,12 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import { Button } from '@mui/material';
 import Home from './app/pages/Home';
+import { Route, Routes } from 'react-router-dom';
+import Login from './app/pages/Login';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <div className='App'>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </div>
   );
 }

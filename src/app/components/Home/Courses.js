@@ -2,7 +2,6 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
-import Typography from '@mui/material/Typography';
 function Courses() {
     const images = [
         {
@@ -100,7 +99,7 @@ function Courses() {
                             style={{
                                 width: image.width,
                                 marginInline: 10,
-                                marginTop: 5,
+                                marginTop: 10,
                             }}
                         >
                             <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />

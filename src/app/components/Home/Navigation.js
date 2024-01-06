@@ -1,6 +1,5 @@
 import FxBtn from "../shared/FxBtn";
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 function Navigation() {
@@ -63,9 +62,9 @@ function Navigation() {
                             <div class="relative ml-3">
                                 <div>
                                     <div class="space-x-4 hidden lg:flex">
-                                        <FxBtn title={'Home'} />
+                                        <FxBtn to={'/'} title={'Home'} />
                                         <FxBtn title={'About Us'} />
-                                        <FxBtn title={"Contact Us"} />
+                                        <FxBtn to={'/login'} title={"Contact Us"} />
                                     </div>
                                 </div>
                             </div>
