@@ -12,10 +12,10 @@ function About() {
       </div>
       <div className='flex justify-center items-center w-full'>
         <div className='grid grid-cols-2 gap-10 w-full m-5'>
-          <div className='bg-primary flex justify-center items-center h-32 px-5 rounded-3xl font-bold text-4xl text-secondary font-serif '>
+          <div className='bg-secondary shadow-xl flex justify-center items-center h-32 px-5 rounded-3xl font-bold text-4xl text-primary font-serif' style={{border : "5px solid #e07a5f"}}>
             <span>25 Students</span>
           </div>
-          <div className='bg-primary flex justify-center items-center px-5 rounded-3xl font-bold text-4xl text-secondary font-serif'>
+          <div className='bg-secondary shadow-xl flex justify-center items-center px-5 rounded-3xl font-bold text-4xl text-primary font-serif' style={{border : "5px solid #e07a5f"}}>
             <span>3 Trainers</span>
           </div>
         </div>

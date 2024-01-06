@@ -17,25 +17,10 @@
   background-color: #aaaaaa;
   height: 85%;
 }
-.curveM {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 400px;
-  padding-top: 100px;
-  background: #3c31dd;
-}
-
-.curve::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  transform: translate(85%, 60%);
-  background-color: hsl(210, 4%, 70%);
+.bannerImg{
+  background-color: black;
+  /* opacity: 0.4; */
+  /* mix-blend-mode:overlay; */
 }
 
 

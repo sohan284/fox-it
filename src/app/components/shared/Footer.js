@@ -9,7 +9,7 @@ export default function Footer1() {
           <FooterBrand
             // href="https://flowbite.com"
             className='w-24 '
-            src="https://i.ibb.co/hWpDdKb/FoxIt.jpg"
+            src="https://i.ibb.co/X3RtxjP/logo.png"
             alt="Flowbite Logo"
             name="Fox IT"
           />
