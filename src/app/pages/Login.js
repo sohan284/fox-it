@@ -3,7 +3,6 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Navigation from '../components/Home/Navigation';
-import Footer1 from '../components/shared/Footer';
 import { Button } from '@mui/material';
 import Loader from '../components/shared/Loader';
 import Footer2 from '../components/shared/Footer2';

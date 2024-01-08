@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import Footer1 from '../components/shared/Footer';
 import Navigation from '../components/Home/Navigation';
 import { Button } from '@mui/material';
 import Loader from '../components/shared/Loader';
