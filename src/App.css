@@ -22,6 +22,15 @@
   /* opacity: 0.4; */
   /* mix-blend-mode:overlay; */
 }
+.loginImg{
+  /* opacity: 0.4; */
+  mix-blend-mode: luminosity;
+}
+.signupImg{
+  transform: scaleX(-1);
+  /* opacity: 0.4; */
+  mix-blend-mode: luminosity;
+}
 
 
 

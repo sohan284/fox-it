@@ -4,8 +4,9 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Navigation from '../components/Home/Navigation';
 import Footer1 from '../components/shared/Footer';
-import { HashLoader } from 'react-spinners';
 import { Button } from '@mui/material';
+import Loader from '../components/shared/Loader';
+import Footer2 from '../components/shared/Footer2';
 
 
 const Login = () => {
@@ -35,47 +36,68 @@ const Login = () => {
     }
     if (loading) {
         return <div className='flex justify-center h-screen items-center'>
-            <HashLoader
-                color="#F0EDCC"
-                size={100}
-            />
+            <Loader />
         </div>
     }
 
     return (
         <div>
             <Navigation />
-            <div className='flex justify-center my-24 text-start'>
-                <div className=''>
-                    <div className='border rounded-lg p-8 mt-5 shadow-lg bg-primary'>
+            <div className='flex container shadow-lg mx-auto justify-center my-24 text-start'>
+                <img className=" w-auto hidden lg:block loginImg" src="https://i.ibb.co/jkpNbZm/loginpage.jpg" alt="FoxIt" border="0" />
+                <div className='bg-primary'>
+                    <div className=' p-8 bg-primary'>
                         <div>
                             <h1 className='text-3xl font-bold mb-7'>Log-In</h1>
-
                             <h6 className='text-sm font-semibold '>Your Email</h6>
-                            <input className='w-72 rounded-lg p-2'
+                            <input className='w-72 rounded-sm p-1'
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder='Email'
                             />
 
-                            <h6 className='text-sm font-semibold mt-10'>Password</h6>
-                            <input className='w-72 rounded-lg p-2'
+                            <h6 className='text-sm font-semibold mt-5'>Password</h6>
+                            <input className='w-72 rounded-sm p-1'
                                 type="password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 placeholder='Password' />
                             <br />
-                            <button onClick={() => signInWithEmailAndPassword(email, password)} className='w-72 text-white font-bold bg-secondary hover:text-accent hover:border-accent text-primary rounded p-1 mt-10'> Login</button>
-
+                            <Button
+                                onClick={() => signInWithEmailAndPassword(email, password)}
+                                style=
+                                {{
+                                    width: "288px",
+                                    marginTop: '20px',
+                                    backgroundColor: '#355E3B',
+                                    color: 'whitesmoke',
+                                    fontWeight: '700'
+                                }}>
+                                Login</Button>
                         </div>
                         {errorMessage}
                     </div>
-                    <div className="divider my-8 text-primary" ><small>New to Fox IT ?</small></div>
-                    <button onClick={handleSignup} className=' shadow-lg bg-primary hover:bg-accent w-full p-1 rounded'>Create Your account</button>
+                    <div className="text-secondary text-center bg-primary my-5" ><small>New to Fox IT? <span onClick={handleSignup} className='font-semibold text-[#355E3B] cursor-pointer' > Sign-Up</span></small> </div>
+                    <div className='flex justify-center'>
+                        <Button
+                            onClick={handleSignup}
+                            style=
+                            {{
+                                width: "288px",
+
+                                justifyContent: 'center',
+                                margin: '10px',
+                                backgroundColor: '#001f00',
+                                color: 'whitesmoke',
+                                fontWeight: '700'
+                            }}>
+                            Create New Account</Button>
+                    </div>
                 </div>
+
             </div>
-            <Footer1/>
+            <Footer2 />
         </div>
     );
 };

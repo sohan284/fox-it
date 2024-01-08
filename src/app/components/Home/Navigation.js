@@ -2,19 +2,25 @@ import FxBtn from "../shared/FxBtn";
 import * as React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 function Navigation() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
+    const navigate = useNavigate()
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
     const handleClose = () => {
         setAnchorEl(null);
     };
+    const handleNavigate = (e) => {
+        navigate(e)
+    }
     return (
         <div className="container mx-auto mt-10">
             <nav class="bg-gray-800">
-                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="mx-auto px-2 sm:px-6 lg:px-8">
                     <div class="relative flex h-16 items-center justify-between">
                         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                             <div>
@@ -44,12 +50,10 @@ function Navigation() {
                                     <MenuItem onClick={handleClose}>Contact Us</MenuItem>
                                 </Menu>
                             </div>
-
-
                         </div>
                         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                             <div class="flex flex-shrink-0 items-center">
-                                <img className="h-28 w-auto" src="https://i.ibb.co/X3RtxjP/logo.png" alt="FoxIt" border="0" />
+                                <img onClick={()=>{handleNavigate("/")}} className="h-28 w-auto" src="https://i.ibb.co/X3RtxjP/logo.png" alt="FoxIt" border="0" />
                             </div>
                         </div>
                         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -64,13 +68,17 @@ function Navigation() {
                                     <div class="space-x-4 hidden lg:flex">
                                         <FxBtn to={'/'} title={'Home'} />
                                         <FxBtn title={'About Us'} />
-                                        <FxBtn to={'/login'} title={"Contact Us"} />
+                                        <FxBtn  title={"Contact Us"} />
                                     </div>
                                 </div>
+                            </div>
+                            <div className="ml-5">
+                                <Button onClick={()=>{handleNavigate("/login")}} style={{ backgroundColor: '#355E3B', color: 'whitesmoke' }}>Log In</Button>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </nav>
         </div>
     )
