@@ -47,8 +47,8 @@ const SignUp = () => {
     return (
         <div>
             <Navigation />
-            <div className='flex justify-center mt-24'>
-                <div className='bg-primary p-5 px-12'>
+            <div className='flex justify-center mt-12'>
+                <div className='bg-primary p-5 px-10'>
                     <div className='w-[100%] text-start bg-primary '>
                         <form>
                             <h1 className='text-3xl  font-bold mb-5'>Create Account</h1>
