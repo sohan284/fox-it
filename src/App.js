@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./app/pages/Login";
 import SignUp from "./app/pages/SignUp";
 import Form from "./app/components/Home/Form";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reg-form" element={<Form />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
