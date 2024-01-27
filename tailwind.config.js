@@ -2,9 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    colors:{
-      primary : '#F0EDCC',
-      secondary : '#001f00',
+    colors: {
+      primary: '#F0EDCC',
+      secondary: '#002F31',
       accent: '#f4d35e',
     },
     extend: {},

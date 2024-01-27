@@ -88,7 +88,7 @@ const Form = () => {
         </Button>
       </div>
 
-      {/* <Footer2 /> */}
+      <Footer2 />
     </div>
   );
 };

@@ -20,7 +20,7 @@ function Home() {
                         <defs>
                             <linearGradient id="gradient" gradientTransform="rotate(90)">
                                 <stop offset="1%" stopColor="#F0EDCC" />
-                                <stop offset="60%" stopColor="#001f00" />
+                                <stop offset="60%" stopColor="#002F31" />
                             </linearGradient>
                         </defs>
 

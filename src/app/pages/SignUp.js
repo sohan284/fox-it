@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import Navigation from '../components/Home/Navigation';
@@ -109,7 +109,7 @@ const SignUp = () => {
                                 width: "288px",
                                 justifyContent: 'center',
                                 marginBottom: '5px',
-                                backgroundColor: '#001f00',
+                                backgroundColor: '#002F31',
                                 color: 'whitesmoke',
                                 fontWeight: '700'
                             }}>
