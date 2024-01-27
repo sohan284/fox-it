@@ -5,6 +5,7 @@ import Footer2 from "../shared/Footer2";
 import { Button } from "flowbite-react";
 import { toast } from "react-toastify";
 
+
 const Form = () => {
   const [name, setName] = useState(null);
   const [phone, setPhone] = useState(null);
