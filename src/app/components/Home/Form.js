@@ -4,13 +4,15 @@ import Navigation from "./Navigation";
 import Footer2 from "../shared/Footer2";
 import { Button } from "flowbite-react";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 
 const Form = () => {
   const [name, setName] = useState(null);
   const [phone, setPhone] = useState(null);
   const [email, setEmail] = useState(null);
-  const [error, setError] = useState(null)
+  const [error, setError] = useState(null);
+  const navigate = useNavigate()
 
   const handleSubmitForm = () => {
     if (name, phone, email) {
@@ -33,6 +35,7 @@ const Form = () => {
         setEmail(''),
         setError(false),
         toast.success('Thanks !!  Our team will contact with you within 24 hour'))
+      navigate('/')
     } else {
       setError(true)
     }

@@ -73,11 +73,10 @@ function Navigation() {
                     "aria-labelledby": "basic-button",
                   }}
                 >
-                  <MenuItem onClick={handleClose}>Home</MenuItem>
+                  <MenuItem onClick={() => navigate("/")}>Home</MenuItem>
                   <MenuItem onClick={() => navigate("/reg-form")}>
                     Reg Form
                   </MenuItem>
-                  <MenuItem onClick={handleClose}>Contact Us</MenuItem>
                 </Menu>
               </div>
             </div>
@@ -108,7 +107,7 @@ function Navigation() {
                   <div class="space-x-4 hidden lg:flex">
                     <FxBtn to={"/"} title={"Home"} />
                     <FxBtn to={"/reg-form"} title={"Reg Form"} />
-                    <FxBtn title={"Contact Us"} />
+
                   </div>
                 </div>
               </div>
