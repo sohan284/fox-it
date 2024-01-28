@@ -7,15 +7,14 @@ function About() {
           Fox It | A global EdTech-based digital workforce development and skill-oriented education provider.
         </h4>
         <p className='font-medium text-left'>
-          Fox IT currently serving over 3 million learners and professionals and 2300+ academic institutions in 15+ countries. CodersTrust mission is to transform underprivileged, disadvantaged, and marginalized communities - especially youth and women - with career skills for the Digital Era and connect them with work opportunities to enable financial independence and economic growth at a global scale. CodersTrust has developed a sustainable and scalable market-based model for providing skill-focused training to millions of youths worldwide, resulting in employment, upward social mobility and durable social impact.
-        </p>
+          Fox IT offers a diverse range of five comprehensive courses designed to empower individuals with essential skills in today's digital landscape. From mastering the fundamentals of data entry to delving into the intricacies of web development, graphics design, digital marketing, and accounting management, our courses cater to a wide spectrum of interests and career aspirations. With experienced instructors, hands-on learning experiences, and cutting-edge curriculum, Fox IT ensures that every student receives the knowledge and practical expertise needed to thrive in their chosen field. Discover your potential and unlock new opportunities with Fox IT's transformative courses </p>
       </div>
       <div className='flex justify-center items-center w-full'>
         <div className='grid grid-cols-2 gap-10 w-full m-5'>
-          <div className='bg-secondary shadow-xl flex justify-center items-center h-32 px-5 rounded-3xl font-bold text-4xl text-primary font-serif' style={{border : "5px solid #e07a5f"}}>
+          <div className='bg-secondary shadow-xl flex justify-center items-center h-32 px-5 rounded-3xl font-bold text-2xl text-primary font-serif' style={{ border: "5px solid #e07a5f" }}>
             <span>25 Students</span>
           </div>
-          <div className='bg-secondary shadow-xl flex justify-center items-center px-5 rounded-3xl font-bold text-4xl text-primary font-serif' style={{border : "5px solid #e07a5f"}}>
+          <div className='bg-secondary shadow-xl flex justify-center items-center px-5 rounded-3xl font-bold text-2xl text-primary font-serif' style={{ border: "5px solid #e07a5f" }}>
             <span>3 Trainers</span>
           </div>
         </div>

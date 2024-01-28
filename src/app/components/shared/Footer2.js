@@ -4,7 +4,7 @@ import { Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, Footer
 export default function Footer2() {
     return (
         <Footer container>
-            <div className="w-full text-primary text-center bottom-0 absolute">
+            <div className="w-full text-primary mt-24 text-center">
                 <div className="w-full flex items-center justify-center">
                     <div className='flex flex-col justify-center items-center'>
                         <FooterBrand
@@ -14,10 +14,14 @@ export default function Footer2() {
                             alt="Flowbite Logo"
                             name="Fox IT"
                         />
-                        <FooterLinkGroup className='grid gap-5 grid-cols-3 text-'>
-                            <FooterLink href="#">About</FooterLink>
-                            <FooterLink href="#">Privacy Policy</FooterLink>
-                            <FooterLink href="#">Contact</FooterLink>
+                        <FooterLinkGroup className='grid gap-5 lg:grid-cols-1'>
+                            <FooterLink href="#">Connect Us</FooterLink>
+                            <div className='flex'>
+                                <a className="link mr-1 link-hover" href='https://www.facebook.com/foxitcentre' target='blank'>
+                                    <img width={40} src="https://i.ibb.co/7Sv45pg/facebook-circle.png" alt="" /></a>
+                                <a className="link link-hover" href='https://www.facebook.com/foxitcentre' target='blank'>
+                                    <img width={43} src="https://i.ibb.co/h1bwTJB/linked-in-icon-18.png" alt="" /></a>
+                            </div>
                         </FooterLinkGroup>
                     </div>
                 </div>

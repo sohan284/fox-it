@@ -9,18 +9,24 @@ function Courses() {
     {
       url: "https://i.postimg.cc/0yGwGfCF/gpd-1.jpg",
       title: "See More",
-      width: "32%",
+      width: "49%",
     },
     {
       url: "https://i.postimg.cc/63jg1CBf/wbd.webp",
       title: "See More",
-      width: "32%",
+      width: "49%",
     },
     {
       url: "https://i.postimg.cc/4yrWc51n/dte-1.jpg",
       title: "See More",
-      width: "32%",
+      width: "49%",
     },
+    {
+      url: " https://i.ibb.co/rMcS2MX/73442450eb7c63e3df3defd09a775fda.jpg",
+      title: "See More",
+      width: "49%",
+    },
+
   ];
 
   const ImageButton = styled(ButtonBase)(({ theme }) => ({

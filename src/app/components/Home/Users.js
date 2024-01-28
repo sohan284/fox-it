@@ -7,7 +7,7 @@ const Users = () => {
     const [users, setUsers] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/users`)
+        fetch(`https://foxit-sijq.onrender.com/users`)
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [])

@@ -21,7 +21,7 @@ const Form = () => {
         phone: phone,
         email: email,
       }
-      const url = `http://localhost:3000/users`
+      const url = `https://foxit-sijq.onrender.com/users`
       fetch(url, {
         method: 'POST',
         headers: {
@@ -44,7 +44,7 @@ const Form = () => {
   return (
     <div>
       <Navigation />
-      <div className="bg-primary w-80  grid gap-3 container mx-auto rounded-lg p-10 mt-12">
+      <div className="bg-primary w-80  grid gap-3 container mx-auto rounded-lg p-10 mt-24">
         <h1 className="text-secondary font-bold mb-5">
           Course Registration Form
         </h1>

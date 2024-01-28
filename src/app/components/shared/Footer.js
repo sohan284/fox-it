@@ -14,9 +14,13 @@ export default function Footer1() {
             name="Fox IT"
           />
           <FooterLinkGroup className='grid gap-5 lg:grid-cols-1'>
-            <FooterLink href="#">About</FooterLink>
-            <FooterLink href="#">Privacy Policy</FooterLink>
-            <FooterLink href="#">Contact</FooterLink>
+            <FooterLink href="#">Connect Us</FooterLink>
+            <div className='flex'>
+              <a className="link mr-1 link-hover" href='https://www.facebook.com/foxitcentre' target='blank'>
+                <img width={40} src="https://i.ibb.co/7Sv45pg/facebook-circle.png" alt="" /></a>
+              <a className="link link-hover" href='https://www.facebook.com/foxitcentre' target='blank'>
+                <img width={43} src="https://i.ibb.co/h1bwTJB/linked-in-icon-18.png" alt="" /></a>
+            </div>
           </FooterLinkGroup>
         </div>
         <FooterDivider className='my-1' />
@@ -24,4 +28,4 @@ export default function Footer1() {
       </div>
     </Footer>
   );
-}
+} 
