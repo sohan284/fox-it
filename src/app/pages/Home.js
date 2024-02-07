@@ -13,20 +13,8 @@ function Home() {
             <Navigation />
             <Banner />
             <About />
-            <div className='container mx-auto mt-20' style={{ borderTop: "5px solid #F0EDCC", borderStartStartRadius: "100px", borderStartEndRadius: "100px" }}>
-                <Courses />
-                <div className='container mx-auto relative'>
-                    <Wave fill="url(#gradient)">
-                        <defs>
-                            <linearGradient id="gradient" gradientTransform="rotate(90)">
-                                <stop offset="1%" stopColor="#F0EDCC" />
-                                <stop offset="60%" stopColor="#002F31" />
-                            </linearGradient>
-                        </defs>
+            <Courses />
 
-                    </Wave>
-                </div>
-            </div>
             <Footer1></Footer1>
             {/* <ContactUs/> */}
         </div>

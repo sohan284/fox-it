@@ -3,28 +3,29 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import { useNavigate } from "react-router-dom";
+import Wave from "react-wavify";
 function Courses() {
   const navigate = useNavigate();
   const images = [
     {
       url: "https://i.postimg.cc/0yGwGfCF/gpd-1.jpg",
       title: "See More",
-      width: "49%",
+      width: "100%",
     },
     {
       url: "https://i.postimg.cc/63jg1CBf/wbd.webp",
       title: "See More",
-      width: "49%",
+      width: "100%",
     },
     {
       url: "https://i.postimg.cc/4yrWc51n/dte-1.jpg",
       title: "See More",
-      width: "49%",
+      width: "100%",
     },
     {
       url: " https://i.ibb.co/rMcS2MX/73442450eb7c63e3df3defd09a775fda.jpg",
       title: "See More",
-      width: "49%",
+      width: "100%",
     },
 
   ];
@@ -105,16 +106,9 @@ function Courses() {
       <span className="bg-primary text-[5px] rounded-full">
         ______________________________________
       </span>
-      <div className="text-primary">
-        <Box
-          sx={{
-            display: "flex",
-            flexWrap: "wrap",
-            minWidth: 300,
-            width: "100%",
-          }}
-        >
-          {images.map((image) => (
+      <div className="text-primary grid lg:grid-cols-3 gap-3 mt-5">
+        {images.map((image) => (
+          <div className=" border-white hover:rounded-none rounded-lg  mx-5 lg:mx-0">
             <ImageButton
               onClick={() => {
                 navigate("/reg-form");
@@ -123,16 +117,31 @@ function Courses() {
               key={image.title}
               style={{
                 width: image.width,
-                marginInline: 5,
-                marginTop: 10,
+                backgroundColor: 'red',
+                borderRadius: '10',
+                border: '1px solid #F0EDCC',
+                boxShadow: "revert",
+                // marginInline: 5,
               }}
             >
               <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
               <ImageBackdrop className="MuiImageBackdrop-root" />
               <Image></Image>
             </ImageButton>
-          ))}
-        </Box>
+            {/* <div className='container mx-auto relative'>
+              <Wave fill="url(#gradient)">
+                <defs>
+                  <linearGradient id="gradient" gradientTransform="rotate(90)">
+                    <stop offset="1%" stopColor="#F0EDCC" />
+                    <stop offset="60%" stopColor="#002F31" />
+                  </linearGradient>
+                </defs>
+
+              </Wave>
+            </div> */}
+          </div>
+
+        ))}
       </div>
       <div></div>
     </div>

@@ -4,7 +4,7 @@ import { Footer, FooterBrand, FooterCopyright, FooterDivider, FooterLink, Footer
 export default function Footer1() {
   return (
     <Footer container>
-      <div className="w-full text-primary text-center">
+      <div className="w-full text-primary text-center mt-24">
         <div className="w-full flex justify-evenly">
           <FooterBrand
             // href="https://flowbite.com"
