@@ -4,6 +4,8 @@ import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import { useNavigate } from "react-router-dom";
 import Wave from "react-wavify";
+import CustomTitleBar from "../shared/CustomTitleBar";
+import { motion } from "framer-motion"
 function Courses() {
   const navigate = useNavigate();
   const images = [
@@ -96,23 +98,17 @@ function Courses() {
   // }));
 
   return (
-    <div
-      className="container mx-auto"
+    <motion.div
+      className="container mx-auto mt-20"
       style={{ borderEndEndRadius: "120px", borderStartStartRadius: "120px" }}
     >
-      <h1 className="font-extrabold text-primary text-4xl pt-10">
-        Featured Courses
-      </h1>
-      <span className="bg-primary text-[5px] rounded-full">
-        ______________________________________
-      </span>
-      <div className="text-primary grid lg:grid-cols-3 gap-3 mt-5">
+      <CustomTitleBar title="Featured Courses" />
+
+      <motion.div className="text-primary grid lg:grid-cols-3 gap-3 mt-5 courseBg">
         {images.map((image) => (
           <div className=" border-white hover:rounded-none rounded-lg  mx-5 lg:mx-0">
             <ImageButton
-              onClick={() => {
-                navigate("/reg-form");
-              }}
+
               focusRipple
               key={image.title}
               style={{
@@ -142,9 +138,9 @@ function Courses() {
           </div>
 
         ))}
-      </div>
+      </motion.div>
       <div></div>
-    </div>
+    </motion.div>
   );
 }
 

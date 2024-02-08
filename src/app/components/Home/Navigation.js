@@ -4,6 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import Form from "./Form";
 function Navigation() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -23,7 +24,7 @@ function Navigation() {
         <div class="mx-auto px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute right-10 flex items-center sm:hidden">
-              <div>
+              {/* <div>
                 <button
                   onClick={handleClick}
                   type="button"
@@ -74,11 +75,12 @@ function Navigation() {
                   }}
                 >
                   <MenuItem onClick={() => navigate("/")}>Home</MenuItem>
-                  <MenuItem onClick={() => navigate("/reg-form")}>
-                    Reg Form
+                  <MenuItem>
+                    <Form />
                   </MenuItem>
                 </Menu>
-              </div>
+              </div> */}
+              <Form />
             </div>
             <div class="flex flex-1 items-center  sm:items-stretch justify-start">
               <div class="flex flex-shrink-0 items-center">
@@ -105,8 +107,9 @@ function Navigation() {
               <div class="relative ml-3">
                 <div>
                   <div class="space-x-4 hidden lg:flex">
-                    <FxBtn to={"/"} title={"Home"} />
-                    <FxBtn to={"/reg-form"} title={"Reg Form"} />
+                    {/* <FxBtn to={"/"} title={"Home"} />
+                    <FxBtn title={"Reg Form"} /> */}
+                    <Form />
 
                   </div>
                 </div>

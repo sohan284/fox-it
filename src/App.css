@@ -31,7 +31,9 @@
   /* opacity: 0.4; */
   mix-blend-mode: luminosity;
 }
-
+.courseBg{
+  background-image: "https://i.ibb.co/pxtSX5W/5november-background-10-removebg-preview.png";
+}
 
 
 @media (prefers-reduced-motion: no-preference) {

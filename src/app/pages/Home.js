@@ -7,6 +7,8 @@ import Courses from '../components/Home/Courses';
 import Wave from 'react-wavify';
 // import ContactUs from '../components/Home/ContactUs';
 import Footer1 from '../components/shared/Footer';
+import OurTeam from '../components/Home/OurTeam';
+import Form from '../components/Home/Form';
 function Home() {
     return (
         <div className="mx-auto">
@@ -14,7 +16,7 @@ function Home() {
             <Banner />
             <About />
             <Courses />
-
+            <OurTeam />
             <Footer1></Footer1>
             {/* <ContactUs/> */}
         </div>
