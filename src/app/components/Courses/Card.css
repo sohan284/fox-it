@@ -1,0 +1,56 @@
+.course-card {
+  border-radius: 8px;
+  box-shadow: 0 0 50px #001f20;
+  overflow: hidden;
+  transition: transform 0.2s;
+  background-color: #002F31; /* Background color set to deep teal */
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.8; /* Adjust the opacity as desired */
+}
+
+.course-info {
+  padding: 20px;
+}
+
+.course-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #F0EDCC; /* White text color for better readability */
+}
+
+.course-description {
+  font-size: 1rem;
+  color: #F0EDCC; /* Light grey text color for description */
+  margin-bottom: 15px;
+}
+
+.course-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #F0EDCC; /* Gold text color for price */
+}
+
+.enroll-button {
+  background-color: #009790; /* Gold button background color */
+  color: #002F31; /* Deep teal text color */
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enroll-button:hover {
+  background-color: #21bb9a; /* Darker gold color on hover */
+}

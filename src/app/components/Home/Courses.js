@@ -11,22 +11,22 @@ function Courses() {
   const images = [
     {
       url: "https://i.postimg.cc/0yGwGfCF/gpd-1.jpg",
-      title: "See More",
+      title: "Graphics Design",
       width: "100%",
     },
     {
       url: "https://i.postimg.cc/63jg1CBf/wbd.webp",
-      title: "See More",
+      title: "Web Development",
       width: "100%",
     },
     {
       url: "https://i.postimg.cc/4yrWc51n/dte-1.jpg",
-      title: "See More",
+      title: "Data Entry",
       width: "100%",
     },
     {
       url: " https://i.ibb.co/rMcS2MX/73442450eb7c63e3df3defd09a775fda.jpg",
-      title: "See More",
+      title: "Digital Marketing",
       width: "100%",
     },
 

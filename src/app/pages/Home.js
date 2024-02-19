@@ -9,13 +9,16 @@ import Wave from 'react-wavify';
 import Footer1 from '../components/shared/Footer';
 import OurTeam from '../components/Home/OurTeam';
 import Form from '../components/Home/Form';
+import CourseCard from '../components/Courses/Card';
+import CoursesCards from './CoursesCard';
 function Home() {
     return (
         <div className="mx-auto">
             <Navigation />
             <Banner />
             <About />
-            <Courses />
+            {/* <Courses /> */}
+            <CoursesCards/>
             <OurTeam />
             <Footer1></Footer1>
             {/* <ContactUs/> */}

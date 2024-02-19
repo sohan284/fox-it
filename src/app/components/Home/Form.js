@@ -47,9 +47,9 @@ const Form = () => {
   }
 
   return (
-    <div>
-      <Button className="text-xl  font-bold bg-primary px-5 text-secondary py-1" onClick={handleOpen}>
-        Reg Form
+    <div className="flex justify-center">
+      <Button className="enroll-button" onClick={handleOpen}>
+        Enroll Now
       </Button>
       <Dialog
         open={open}
