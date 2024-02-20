@@ -25,7 +25,7 @@
 }
 
 .navbar-brand {
-    color: white;
+    color: #F0EDCC;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
@@ -35,7 +35,7 @@
     display: none; /* Hide by default for larger screens */
     background-color: transparent;
     border: none;
-    color: white;
+    color: #F0EDCC;
     cursor: pointer;
     font-size: 16px;
     outline: none;
@@ -47,7 +47,7 @@
 }
 
 .navbar-links a {
-    color: white;
+    color: #F0EDCC;
     text-decoration: none;
     padding: 10px;
     font-size: 16px;
@@ -81,6 +81,6 @@
 
     .navbar-links a {
         padding: 10px 0;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #F0EDCC;
     }
 }

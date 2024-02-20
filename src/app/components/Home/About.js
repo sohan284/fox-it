@@ -12,7 +12,7 @@ function About() {
             Fox It | A global EdTech-based digital workforce development and skill-oriented education provider.
           </h4>
           <p className='font-medium text-left'>
-            Fox IT offers a diverse range of five comprehensive courses designed to empower individuals with essential skills in today's digital landscape. From mastering the fundamentals of data entry to delving into the intricacies of web development, graphics design, digital marketing, and accounting management, our courses cater to a wide spectrum of interests and career aspirations. With experienced instructors, hands-on learning experiences, and cutting-edge curriculum, Fox IT ensures that every student receives the knowledge and practical expertise needed to thrive in their chosen field. Discover your potential and unlock new opportunities with Fox IT's transformative courses </p>
+          Welcome to Fox IT, your premier destination for unlocking the power of technology. At Fox IT, we're committed to empowering individuals and businesses alike with cutting-edge IT solutions, expert guidance, and unparalleled support. Whether you're a seasoned professional looking to advance your skills or an organization striving for digital excellence, our comprehensive range of courses and services cater to all your technology needs. Join us on a transformative journey where innovation meets expertise, and together, let's shape the future of IT. </p>
         </div>
         <div className='flex justify-center items-center w-full'>
           <div className='grid grid-cols-2 gap-10 w-full m-5'>

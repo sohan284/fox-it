@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useState } from 'react';
 import './Navbar.css'; // Import CSS for navbar styles
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes,faBars } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
@@ -31,10 +31,10 @@ const Navbar = () => {
           </button>
           {/* For larger screens, navigation links */}
           <div className={`navbar-links ${showLinks ? 'show' : ''}`}>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+          <Link to="/" onClick={() => handleNavigate('/')}>Home</Link>
+          <Link to="/about" onClick={() => handleNavigate('/about')}>About</Link>
+          <Link to="/" onClick={() => handleNavigate('/')}>Registration</Link>
+          <Link to="/" onClick={() => handleNavigate('/')}>Services</Link>
           </div>
         </div>
       </div>

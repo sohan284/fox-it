@@ -1,22 +1,34 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram ,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const handleNavigate = (e) => {
+    navigate(e);
+  };
   return (
     <footer style={styles.footer}>
       <div style={styles.footerContainer}>
         <div style={styles.footerSection}>
-          <h3 className='text-[#009790]'>About Us</h3>
+          <div className='flex justify-center'>
+          <img
+                  className="lg:h-12 h-12 w-auto"
+                  src="https://i.ibb.co/X3RtxjP/logo.png"
+                  alt="FoxIt"
+                  border="0"
+                />
+          </div>
           <p className='text-[#F0EDCC]'>Elevate your digital journey with us today!</p>
         </div>
         <div style={styles.footerSection}>
           <h3 className='text-[#009790]'>Quick Links</h3>
           <ul style={styles.footerLinks}>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li> <Link to="/" onClick={() => handleNavigate('/')}>Home</Link></li>
+            <li> <Link to="/about" onClick={() => handleNavigate('/about')}>About</Link></li>
+            <li> <Link to="/" onClick={() => handleNavigate('/')}>Services</Link></li>
+            <li> <Link to="/" onClick={() => handleNavigate('/')}>Contact</Link></li>
           </ul>
         </div>
         <div style={styles.footerSection}>

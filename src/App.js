@@ -7,6 +7,7 @@ import Form from "./app/components/Home/Form";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Users from "./app/components/Home/Users";
+import AboutUsPage from "./app/pages/AboutUsPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reg-form" element={<Form />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/about" element={<AboutUsPage/>} />
       </Routes>
       <ToastContainer />
     </div>
