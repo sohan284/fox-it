@@ -7,11 +7,11 @@ const Footer = () => {
     <footer style={styles.footer}>
       <div style={styles.footerContainer}>
         <div style={styles.footerSection}>
-          <h3>About Us</h3>
-          <p>Elevate your digital journey with us today!</p>
+          <h3 className='text-[#009790]'>About Us</h3>
+          <p className='text-[#F0EDCC]'>Elevate your digital journey with us today!</p>
         </div>
         <div style={styles.footerSection}>
-          <h3>Quick Links</h3>
+          <h3 className='text-[#009790]'>Quick Links</h3>
           <ul style={styles.footerLinks}>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -20,7 +20,7 @@ const Footer = () => {
           </ul>
         </div>
         <div style={styles.footerSection}>
-          <h3>Connect With Us</h3>
+          <h3 className='text-[#009790]'>Connect With Us</h3>
           <div style={styles.socialIcons}>
             <a className='m-1' href="https://www.facebook.com/foxitcentre"><FontAwesomeIcon icon={faFacebook} /></a>
             <a className='m-1' href="https://www.facebook.com/foxitcentre"><FontAwesomeIcon icon={faLinkedin} /></a>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div style={styles.footerBottom}>
-        <p>&copy; 2024 Fox-IT. All Rights Reserved.</p>
+        <p className='text-[#F0EDCC]'>&copy; 2024 Fox-IT. All Rights Reserved.</p>
       </div>
     </footer>
   );
@@ -56,8 +56,10 @@ const styles = {
   footerLinks: {
     listStyleType: 'none',
     padding: 0,
+    color:'#F0EDCC',
   },
   socialIcons: {
+    color: '#F0EDCC',
     fontSize: '24px',
     marginTop: '10px',
     display: 'flex',

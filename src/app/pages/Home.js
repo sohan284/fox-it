@@ -13,6 +13,7 @@ import CourseCard from '../components/Courses/Card';
 import CoursesCards from './CoursesCard';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
+import ContactUs from '../components/Home/ContactUs';
 function Home() {
     return (
         <div className="mx-auto">
@@ -23,9 +24,10 @@ function Home() {
             {/* <Courses /> */}
             <CoursesCards/>
             <OurTeam />
+            <ContactUs/>
             <Footer/>
             {/* <Footer1></Footer1> */}
-            {/* <ContactUs/> */}
+            
         </div>
     )
 }
