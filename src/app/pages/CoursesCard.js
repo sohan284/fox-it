@@ -9,25 +9,25 @@ function CoursesCards() {
     {
       url: "https://i.postimg.cc/0yGwGfCF/gpd-1.jpg",
       title: "Graphics Design",
-      price: '2190',
+      price: '2190৳',
       width: "100%",
     },
     {
       url: "https://i.postimg.cc/63jg1CBf/wbd.webp",
       title: "Web Development",
-      price: '2990',
+      price: '2990৳',
       width: "100%",
     },
     {
       url: "https://i.postimg.cc/4yrWc51n/dte-1.jpg",
       title: "Data Entry",
-      price: '799',
+      price: '799৳',
       width: "100%",
     },
     {
       url: " https://i.ibb.co/rMcS2MX/73442450eb7c63e3df3defd09a775fda.jpg",
       title: "Digital Marketing",
-      price: '1590',
+      price: '1590৳',
       width: "100%",
     },
   ]

@@ -11,16 +11,20 @@ import OurTeam from '../components/Home/OurTeam';
 import Form from '../components/Home/Form';
 import CourseCard from '../components/Courses/Card';
 import CoursesCards from './CoursesCard';
+import Navbar from '../components/shared/Navbar';
+import Footer from '../components/shared/Footer';
 function Home() {
     return (
         <div className="mx-auto">
-            <Navigation />
+            {/* <Navigation /> */}
+            <Navbar/>
             <Banner />
             <About />
             {/* <Courses /> */}
             <CoursesCards/>
             <OurTeam />
-            <Footer1></Footer1>
+            <Footer/>
+            {/* <Footer1></Footer1> */}
             {/* <ContactUs/> */}
         </div>
     )

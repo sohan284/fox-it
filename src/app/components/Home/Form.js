@@ -56,9 +56,9 @@ const Form = () => {
         onClose={handleClose}
         aria-labelledby="form-dialog-title"
         scroll="body">
-        <AppBar position="static" color="primary" elevation={0}>
+        <AppBar position="static" elevation={0} style={{ backgroundColor: '#009790' }}>
           <Toolbar className="flex w-full justify-between">
-            <Typography variant="subtitle1" color="inherit">
+            <Typography variant="subtitle1" style={{ color: '#F0EDCC' ,fontWeight: '700' }}>
               Registration Form
             </Typography>
             <Typography
@@ -110,7 +110,7 @@ const Form = () => {
                 width: "",
                 marginTop: "10px",
                 padding: "12px",
-                backgroundColor: "#355E3B",
+                backgroundColor: "#009790",
                 color: "whitesmoke",
                 fontWeight: "700",
               }}
