@@ -7,11 +7,11 @@ function About() {
       <CustomTitleBar title="About Us" />
       <div className="flex lg:flex-row flex-col mx-auto px-5">
         <div data-aos="zoom-in" className="text-primary w-full">
-          <h4 className="text-3xl font-bold my-5 text-left">
+          <h4 data-aos="zoom-in" className="text-3xl font-bold my-5 text-left">
             Fox It | A global EdTech-based digital workforce development and
             skill-oriented education provider.
           </h4>
-          <p className="font-medium text-left">
+          <p data-aos="zoom-in" className="font-medium text-left">
             Fox IT offers a diverse range of five comprehensive courses designed
             to empower individuals with essential skills in today's digital
             landscape. From mastering the fundamentals of data entry to delving

@@ -1,55 +1,87 @@
-import {
-  Footer,
-  FooterBrand,
-  FooterCopyright,
-  FooterDivider,
-  FooterLink,
-  FooterLinkGroup,
-} from "flowbite-react";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram ,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Link, useNavigate } from 'react-router-dom';
 
-export default function Footer1() {
+const Footer = () => {
+  const navigate = useNavigate();
+  const handleNavigate = (e) => {
+    navigate(e);
+  };
   return (
-    <Footer data-aos="zoom-in" container>
-      <div className="w-full text-primary text-center mt-24">
-        <div className="w-full flex justify-evenly">
-          <FooterBrand
-            // href="https://flowbite.com"
-            className="w-20"
-            src="https://i.ibb.co/X3RtxjP/logo.png"
-            alt="Flowbite Logo"
-            name="Fox IT"
-          />
-          <FooterLinkGroup className="grid gap-5 lg:grid-cols-1">
-            <FooterLink href="#"></FooterLink>
-            <div className="flex">
-              <a
-                className="link mr-1 link-hover"
-                href="https://www.facebook.com/foxitcentre"
-                target="blank"
-              >
-                <img
-                  width={30}
-                  src="https://i.ibb.co/7Sv45pg/facebook-circle.png"
-                  alt=""
+    <footer style={styles.footer}>
+      <div style={styles.footerContainer}>
+        <div style={styles.footerSection}>
+          <div className='flex justify-center'>
+          <img data-aos="zoom-in"
+                  className="lg:h-12 h-12 w-auto"
+                  src="https://i.ibb.co/X3RtxjP/logo.png"
+                  alt="FoxIt"
+                  border="0"
                 />
-              </a>
-              <a
-                className="link link-hover"
-                href="https://www.facebook.com/foxitcentre"
-                target="blank"
-              >
-                <img
-                  width={32}
-                  src="https://i.ibb.co/h1bwTJB/linked-in-icon-18.png"
-                  alt=""
-                />
-              </a>
-            </div>
-          </FooterLinkGroup>
+          </div>
+          <p data-aos="zoom-in" className='text-[#F0EDCC]'>Elevate your digital journey with us today!</p>
         </div>
-        <FooterDivider className="my-1" />
-        <FooterCopyright href="#" by="Copyright 2024 Fox IT Center. All Rights Reserve" />
+        <div data-aos="zoom-in" style={styles.footerSection}>
+          <h3 className='text-[#009790]'>Quick Links</h3>
+          <ul  style={styles.footerLinks}>
+            <li> <Link to="/about" onClick={() => handleNavigate('/about')}>About</Link></li>
+            <li> <Link to="/" onClick={() => handleNavigate('/')}>Services</Link></li>
+            <li> <Link to="/" onClick={() => handleNavigate('/')}>Home</Link></li>
+            <li> <Link to="/" onClick={() => handleNavigate('/')}>Contact</Link></li>
+          </ul>
+        </div>
+        <div style={styles.footerSection}>
+          <h3 className='text-[#009790]'>Connect With Us</h3>
+          <div style={styles.socialIcons}>
+            <a data-aos="zoom-in" className='m-1' href="https://www.facebook.com/foxitcentre"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a data-aos="zoom-in" className='m-1' href="https://www.facebook.com/foxitcentre"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a data-aos="zoom-in" className='m-1' href="https://www.facebook.com/foxitcentre"><FontAwesomeIcon icon={faInstagram} /></a>
+          </div>
+        </div>
       </div>
-    </Footer>
+      <div style={styles.footerBottom}>
+        <p className='text-[#F0EDCC]'>&copy; 2024 Fox-IT. All Rights Reserved.</p>
+      </div>
+    </footer>
   );
-}
+};
+
+const styles = {
+  footer: {
+    backgroundColor: '#002F31',
+    color: '#fff',
+    padding: '50px 20px',
+  },
+  footerContainer: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    alignItems: 'flex-start',
+    maxWidth: '1200px',
+    margin: '0 auto',
+  },
+  footerSection: {
+    flexBasis: '300px',
+    marginBottom: '20px',
+  },
+  footerLinks: {
+    listStyleType: 'none',
+    padding: 0,
+    color:'#F0EDCC',
+  },
+  socialIcons: {
+    color: '#F0EDCC',
+    fontSize: '24px',
+    marginTop: '10px',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  footerBottom: {
+    borderTop: '1px solid #555',
+    paddingTop: '20px',
+    textAlign: 'center',
+  },
+};
+
+export default Footer;

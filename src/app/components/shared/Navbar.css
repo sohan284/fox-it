@@ -1,0 +1,90 @@
+/* Navbar.css */
+.navbar {
+    background: linear-gradient(to right, #009790, #21bb9a);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #F0EDCC;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.toggle-button {
+    display: none; /* Hide by default for larger screens */
+    background-color: transparent;
+    border: none;
+    color: #F0EDCC;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-links a {
+    color: #F0EDCC;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Add background color on hover */
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: block; /* Show toggle button for mobile */
+    }
+
+    .navbar-links {
+        display: none; /* Hide links by default for mobile */
+        flex-direction: column;
+        background: linear-gradient(to right, #00978fd3, #21bb9ace);
+        position: absolute;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        z-index: 1000;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 10px;
+        
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-links a {
+        padding: 10px 0;
+        border-bottom: 1px solid #F0EDCC;
+    }
+}
