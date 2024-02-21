@@ -4,6 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import { motion } from "framer-motion";
 import Form from "./Form";
 function Navigation() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -19,7 +20,12 @@ function Navigation() {
     navigate(e);
   };
   return (
-    <div className="container mx-auto mt-10">
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto mt-10"
+    >
       <nav class="bg-gray-800">
         <div class="mx-auto px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
@@ -110,7 +116,6 @@ function Navigation() {
                     {/* <FxBtn to={"/"} title={"Home"} />
                     <FxBtn title={"Reg Form"} /> */}
                     <Form />
-
                   </div>
                 </div>
               </div>
@@ -128,7 +133,7 @@ function Navigation() {
           </div>
         </div>
       </nav>
-    </div>
+    </motion.div>
   );
 }
 export default Navigation;

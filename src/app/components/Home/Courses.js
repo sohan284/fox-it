@@ -5,8 +5,11 @@ import ButtonBase from "@mui/material/ButtonBase";
 import { useNavigate } from "react-router-dom";
 import Wave from "react-wavify";
 import CustomTitleBar from "../shared/CustomTitleBar";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { useDispatch } from "react-redux";
+import { setOpen } from "../../Store/features/formSlice";
 function Courses() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const images = [
     {
@@ -29,7 +32,6 @@ function Courses() {
       title: "See More",
       width: "100%",
     },
-
   ];
 
   const ImageButton = styled(ButtonBase)(({ theme }) => ({
@@ -106,16 +108,18 @@ function Courses() {
 
       <motion.div className="text-primary grid lg:grid-cols-3 gap-3 mt-5 courseBg">
         {images.map((image) => (
-          <div className=" border-white hover:rounded-none rounded-lg  mx-5 lg:mx-0">
+          <div
+            data-aos="zoom-in"
+            className=" border-white hover:rounded-none rounded-lg  mx-5 lg:mx-0"
+          >
             <ImageButton
-
               focusRipple
               key={image.title}
               style={{
                 width: image.width,
-                backgroundColor: 'red',
-                borderRadius: '10',
-                border: '1px solid #F0EDCC',
+                backgroundColor: "red",
+                borderRadius: "10",
+                border: "1px solid #F0EDCC",
                 boxShadow: "revert",
                 // marginInline: 5,
               }}
@@ -136,7 +140,6 @@ function Courses() {
               </Wave>
             </div> */}
           </div>
-
         ))}
       </motion.div>
       <div></div>

@@ -9,13 +9,12 @@ export default function Footer2() {
                     <div className='flex flex-col justify-center items-center'>
                         <FooterBrand
                             // href="https://flowbite.com"
-                            className='w-12 mb-3'
+                            className='w-10 mb-3'
                             src="https://i.ibb.co/X3RtxjP/logo.png"
                             alt="Flowbite Logo"
                             name="Fox IT"
                         />
                         <FooterLinkGroup className='grid gap-5 lg:grid-cols-1'>
-                            <FooterLink href="#">Connect Us</FooterLink>
                             <div className='flex'>
                                 <a className="link mr-1 link-hover" href='https://www.facebook.com/foxitcentre' target='blank'>
                                     <img width={40} src="https://i.ibb.co/7Sv45pg/facebook-circle.png" alt="" /></a>
@@ -26,7 +25,7 @@ export default function Footer2() {
                     </div>
                 </div>
                 <FooterDivider className='my-1' />
-                <FooterCopyright href="#" by="FoxIT™" year={2024} />
+                <FooterCopyright href="#" by="Copyright ©2023 Fox IT Center. All Rights Reserve" year={2024} />
             </div>
         </Footer>
     );
