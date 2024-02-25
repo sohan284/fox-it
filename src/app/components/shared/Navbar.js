@@ -33,8 +33,8 @@ const Navbar = () => {
           <div className={`navbar-links ${showLinks ? 'show' : ''}`}>
           <Link to="/" onClick={() => handleNavigate('/')}>Home</Link>
           <Link to="/about" onClick={() => handleNavigate('/about')}>About</Link>
-          <Link to="/" onClick={() => handleNavigate('/')}>Registration</Link>
-          <Link to="/" onClick={() => handleNavigate('/')}>Services</Link>
+          {/* <Link to="/course" onClick={() => handleNavigate('/')}>Courses</Link> */}
+          <Link to="/services" onClick={() => handleNavigate('/services')}>Services</Link>
           </div>
         </div>
       </div>
