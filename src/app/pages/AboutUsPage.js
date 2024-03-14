@@ -35,7 +35,7 @@ const AboutUsPage = () => {
           <h3 style={styles.memberName}>Yousuf Sarkar</h3>
           <p style={styles.memberRole}>CO-CEO</p>
           <p style={styles.memberBio}>01883502536</p>
-          <p style={styles.memberBio}>Digital Marketing</p>
+          <p style={styles.memberBio}>Digital Marketing Expert</p>
         </div>
         <div data-aos="zoom-in" style={styles.member}>
           <img src="https://i.ibb.co/yY5z2qF/sr.jpg" alt="Team Member 2" style={styles.memberImage} />
