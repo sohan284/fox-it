@@ -38,9 +38,9 @@ function CoursesCards() {
       style={{ borderEndEndRadius: "120px", borderStartStartRadius: "120px" }}
     >
       <CustomTitleBar title="Featured Courses" />
-      <div data-aos="zoom-in" className=" grid lg:grid-cols-3 gap-5">
+      <div  className=" grid lg:grid-cols-3 gap-5">
       {images?.map(card => <div>
-            <Card data-aos="zoom-in"
+            <Card 
             image={card.url}
             title={card.title}
             price={card.price}/>

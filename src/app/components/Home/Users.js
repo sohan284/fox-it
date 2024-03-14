@@ -18,43 +18,44 @@ const Users = () => {
   return (
     <div>
       <Navbar/>
-      <div className="bg-primary grid gap-3 container mx-auto rounded-lg p-5 m-10 mt-12">
+      <div className="bg-primary grid gap-3 container mx-auto rounded-lg p-2 m-10 mt-12">
         <table class="table w-full">
           <thead>
             <tr>
-              <th className="border-b-2">Name</th>
-              <th className="border-b-2 ">Phone</th>
-              <th className="border-b-2">Email</th>
+              <th className="border-b-2  text-[10px]">Name</th>
+              <th className="border-b-2  text-[10px]">Phone</th>
+              <th className="border-b-2 text-[10px]">Email</th>
+              <th className="border-b-2  text-[10px]">Reason</th>
             </tr>
           </thead>
 
           {users?.map((user, index) => (
             <tbody>
-              <tr>
+              <tr className="border-[1px]">
                 <td>
-                  <div class="flex items-center space-x-3 mt-5">
+                  <div class="flex items-center space-x-3 mt-2 p-1">
                     <div class="">
-                      <div class="mask mask-squircle w-10 h-10">
+                      <div class="mask mask-squircle w-4 h-4">
                         <img src={user?.photoURL} alt="" />
-                        <img
+                        <img className="w-5"
                           src="https://i.ibb.co/dgBLLmf/Png-Item-1468479.png"
                           alt=""
                         />
                       </div>
                     </div>
                     <div>
-                      <div class="font-bold">{user?.name}</div>
+                      <div class="font-bold text-[10px]">{user?.name}</div>
                     </div>
                   </div>
                 </td>
-                <td>
+                <td className="text-[10px]">
                   {user?.phone}
-                  <br />
+                 
                 </td>
-                <td>{user?.email}</td>
+                <td className="text-[10px]">{user?.email}</td>
+                <td className="text-[10px]">{user?.reason}</td>
                 <th></th>
               </tr>
-              <br />
             </tbody>
           ))}
         </table>

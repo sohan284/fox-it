@@ -15,14 +15,14 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reg-form" element={<Form />} />
         <Route path="/users" element={<Users />} />
         <Route path="/about" element={<AboutUsPage/>} />
         <Route path="/Services" element={<CourseDetailsPage/>} />
-        <Route path="/enroll" element={<EnrollPage/>} />
+        <Route path="/" element={<EnrollPage/>} />
       </Routes>
       <ToastContainer />
     </div>

@@ -43,7 +43,7 @@ const EnrollPage = () => {
         setReason(null),
         setError(false),
         toast.success('Thanks !!  Our team will contact with you within 24 hour'))
-      navigate('/')
+      navigate('/home')
     } else {
       setError(true)
     }

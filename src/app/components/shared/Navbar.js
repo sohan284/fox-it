@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="navbar-left">
         <img
                   onClick={() => {
-                    handleNavigate("/");
+                    handleNavigate("/home");
                   }}
                   className="lg:h-12 h-12 w-auto"
                   src="https://i.ibb.co/X3RtxjP/logo.png"
@@ -31,8 +31,8 @@ const Navbar = () => {
           </button>
           {/* For larger screens, navigation links */}
           <div className={`navbar-links ${showLinks ? 'show' : ''}`}>
-          <Link to="/" onClick={() => handleNavigate('/')}>Home</Link>
-          <Link to="/enroll" onClick={() => handleNavigate('/enroll')}>Enroll</Link>
+          <Link to="/home" onClick={() => handleNavigate('/home')}>Home</Link>
+          <Link to="/" onClick={() => handleNavigate('/')}>Enroll</Link>
           <Link to="/about" onClick={() => handleNavigate('/about')}>About</Link>
           {/* <Link to="/course" onClick={() => handleNavigate('/')}>Courses</Link> */}
           <Link to="/services" onClick={() => handleNavigate('/services')}>Services</Link>

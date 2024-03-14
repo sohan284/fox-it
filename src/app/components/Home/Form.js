@@ -40,9 +40,10 @@ const Form = () => {
         setError(false),
         toast.success(
           "Thanks !!  Our team will contact with you within 24 hour"
-        )
+        ),
+        navigate("/home")
       );
-      navigate("/");
+      
     } else {
       setError(true);
     }
