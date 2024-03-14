@@ -27,7 +27,7 @@ const ContactUs = () => {
       <div data-aos="zoom-in" style={styles.contactInfo}>
         <h2 style={styles.sectionTitle}>Contact Information</h2>
         <p>Email: foxit.center@gmail.com</p>
-        <p>Phone: +1234567890</p>
+        <p>Phone: 01709222240</p>
         <p>Address: Nandipara, Khilgaon,Dhaka</p>
       </div>
     </div>

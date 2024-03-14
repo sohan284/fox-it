@@ -1,93 +1,62 @@
 import React, { useState } from "react";
 import { TextField } from "@mui/material";
-import Navigation from "./Navigation";
-import Footer2 from "../shared/Footer2";
 import { Button } from "flowbite-react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { AppBar, Box, Dialog, Toolbar, Typography } from "@mui/material";
+import {Box,} from '@mui/material';
+import Navbar from "../components/shared/Navbar";
+import Footer from "../components/shared/Footer";
 
-const Form = () => {
+
+const EnrollPage = () => {
   const [name, setName] = useState(null);
   const [phone, setPhone] = useState(null);
   const [email, setEmail] = useState(null);
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
-  const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate()
+  const [open, setOpen] = React.useState(false)
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true)
+  const handleClose = () => setOpen(false)
 
   const handleSubmitForm = () => {
-    if ((name, phone, email)) {
+    if (name, phone, email) {
       const data = {
         name: name,
         phone: phone,
         email: email,
-      };
-      const url = `https://foxit-sijq.onrender.com/users`;
+      }
+      const url = `https://foxit-sijq.onrender.com/users`
       fetch(url, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          "content-type": "application/json",
+          'content-type': 'application/json'
         },
-        body: JSON.stringify(data),
-      }).then(
-        (res) => res.json(),
+        body: JSON.stringify(data)
+      }).then(res => res.json(),
         handleClose(),
-        setName(""),
-        setPhone(""),
-        setEmail(""),
+        setName(''),
+        setPhone(''),
+        setEmail(''),
         setError(false),
-        toast.success(
-          "Thanks !!  Our team will contact with you within 24 hour"
-        )
-      );
-      navigate("/");
+        toast.success('Thanks !!  Our team will contact with you within 24 hour'))
+      navigate('/')
     } else {
-      setError(true);
+      setError(true)
     }
-  };
+  }
 
   return (
-    <div className="flex justify-center">
-      <Button className="enroll-button" onClick={handleOpen}>
-        Enroll Now
-      </Button>
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="form-dialog-title"
-        scroll="body"
-      >
-        <AppBar
-          position="static"
-          elevation={0}
-          style={{ backgroundColor: "#009790" }}
-        >
-          <Toolbar className="flex w-full justify-between">
-            <Typography
-              variant="subtitle1"
-              style={{ color: "#F0EDCC", fontWeight: "700" }}
-            >
-              Registration Form
-            </Typography>
-            <Typography
-              className="flex items-center my-10"
-              role="button"
-              color="inherit"
-            >
-              <span className="hover:bg-secondary hover:rounded-full px-1.5 py-0.5 font-semibold" onClick={handleClose}>X</span>
-            </Typography>
-          </Toolbar>
-        </AppBar>
+    <div>
+        <Navbar/>
+        <div className="flex justify-center my-20 mx-5">
         <Box
           sx={{
             width: 700,
             maxWidth: "100%",
-          }}
-        >
+          }}>
           <div className="bg-primary grid gap-3 container mx-auto rounded-lg p-10">
+            <h2 className="font-semibold text-secondary text-xl mb-5">Registration Form</h2>
             <div className="flex flex-col">
               <div>
                 <TextField
@@ -114,11 +83,8 @@ const Form = () => {
                   label="Email"
                 />
               </div>
-              {error && (
-                <p className="text-[tomato] mt-3 text-start font-semibold text-xs">
-                  Please Fillup All field
-                </p>
-              )}
+              {error &&
+                <p className='text-[tomato] mt-3 text-start font-semibold text-xs'>Please Fillup All field</p>}
             </div>
             <Button
               onClick={() => handleSubmitForm()}
@@ -135,9 +101,10 @@ const Form = () => {
             </Button>
           </div>
         </Box>
-      </Dialog>
+    </div>
+    <Footer/>
     </div>
   );
 };
 
-export default Form;
+export default EnrollPage;

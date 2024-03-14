@@ -32,6 +32,7 @@ const Navbar = () => {
           {/* For larger screens, navigation links */}
           <div className={`navbar-links ${showLinks ? 'show' : ''}`}>
           <Link to="/" onClick={() => handleNavigate('/')}>Home</Link>
+          <Link to="/enroll" onClick={() => handleNavigate('/enroll')}>Enroll</Link>
           <Link to="/about" onClick={() => handleNavigate('/about')}>About</Link>
           {/* <Link to="/course" onClick={() => handleNavigate('/')}>Courses</Link> */}
           <Link to="/services" onClick={() => handleNavigate('/services')}>Services</Link>

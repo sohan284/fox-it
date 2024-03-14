@@ -67,7 +67,7 @@
     .navbar-links {
         display: none; /* Hide links by default for mobile */
         flex-direction: column;
-        background: linear-gradient(to right, #00978fd3, #21bb9ace);
+        background: linear-gradient(to right, #00978ff3, #21bb9af3);
         position: absolute;
         border-end-end-radius: 10px;
         border-end-start-radius: 10px;

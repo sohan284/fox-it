@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import Footer2 from "../shared/Footer2";
 import Loader from "../shared/Loader";
+import Navbar from "../shared/Navbar";
+import Footer from "../shared/Footer";
 
 const Users = () => {
   const [users, setUsers] = useState(null);
@@ -15,7 +17,7 @@ const Users = () => {
 
   return (
     <div>
-      <Navigation />
+      <Navbar/>
       <div className="bg-primary grid gap-3 container mx-auto rounded-lg p-5 m-10 mt-12">
         <table class="table w-full">
           <thead>
@@ -63,7 +65,7 @@ const Users = () => {
         )}
       </div>
 
-      <Footer2 />
+     <Footer/>
     </div>
   );
 };
