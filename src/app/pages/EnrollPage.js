@@ -21,7 +21,7 @@ const EnrollPage = () => {
   const handleClose = () => setOpen(false)
 
   const handleSubmitForm = () => {
-    if (name, phone, email) {
+    if (name, phone, email ,reason) {
       const data = {
         name: name,
         phone: phone,
