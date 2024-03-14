@@ -10,6 +10,7 @@ import Footer from "../components/shared/Footer";
 
 const EnrollPage = () => {
   const [name, setName] = useState(null);
+  const [reason, setReason] = useState(null);
   const [phone, setPhone] = useState(null);
   const [email, setEmail] = useState(null);
   const [error, setError] = useState(null);
@@ -25,6 +26,7 @@ const EnrollPage = () => {
         name: name,
         phone: phone,
         email: email,
+        reason: reason,
       }
       const url = `https://foxit-sijq.onrender.com/users`
       fetch(url, {
@@ -38,6 +40,7 @@ const EnrollPage = () => {
         setName(''),
         setPhone(''),
         setEmail(''),
+        setReason(null),
         setError(false),
         toast.success('Thanks !!  Our team will contact with you within 24 hour'))
       navigate('/')
@@ -81,6 +84,14 @@ const EnrollPage = () => {
                   value={email}
                   className="w-full"
                   label="Email"
+                />
+              </div>
+              <div className="my-3">
+                <TextField
+                  onChange={(event) => setReason(event.target.value)}
+                  value={reason}
+                  className="w-full"
+                  label="Reason to Enroll"
                 />
               </div>
               {error &&
