@@ -40,7 +40,7 @@
   }
   
   .enroll-button {
-    background-color: #009790; /* Gold button background color */
+    background: linear-gradient(to right, #00978ff3, #21bb9af3);
     color: #002F31; /* Deep teal text color */
     border: none;
     font-weight: 700;
@@ -52,5 +52,5 @@
   }
   
   .enroll-button:hover {
-    background-color: #21bb9a; /* Darker gold color on hover */
+    background: linear-gradient(to right,  #21bb9af3,#00978ff3);
   }

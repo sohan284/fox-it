@@ -62,7 +62,7 @@ const Form = () => {
         <AppBar
           position="static"
           elevation={0}
-          style={{ backgroundColor: "#009790" }}
+          style={{ background: "linear-gradient(to right, #00978ff3, #21bb9af3)", }}
         >
           <Toolbar className="flex w-full justify-between">
             <Typography
@@ -130,7 +130,7 @@ const Form = () => {
                 width: "",
                 marginTop: "10px",
                 padding: "12px",
-                backgroundColor: "#009790",
+                background: "linear-gradient(to right, #00978ff3, #21bb9af3)",
                 color: "whitesmoke",
                 fontWeight: "700",
               }}
