@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { TextField } from "@mui/material";
-import Navigation from "./Navigation";
-import Footer2 from "../shared/Footer2";
 import { Button } from "flowbite-react";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { AppBar, Box, Dialog, Toolbar, Typography } from "@mui/material";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 const Form = () => {
   const [name, setName] = useState(null);
   const [phone, setPhone] = useState(null);
@@ -77,7 +76,12 @@ const Form = () => {
               role="button"
               color="inherit"
             >
-              <span className="hover:bg-secondary hover:rounded-full px-1.5 py-0.5 font-semibold" onClick={handleClose}>X</span>
+              <span
+                className="hover:bg-secondary hover:rounded-full px-1.5 py-0.5 font-semibold"
+                onClick={handleClose}
+              >
+                <FontAwesomeIcon icon={faTimes} />
+              </span>
             </Typography>
           </Toolbar>
         </AppBar>
